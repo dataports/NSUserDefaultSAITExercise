@@ -16,9 +16,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var numTwoTextField: UITextField!
     
     @IBOutlet weak var nameTextField: UITextField!
-    
-    var calculated:Int? = 0
+
     var name:String? = ""
+    var calculated:Int? = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,14 @@ class ViewController: UIViewController, UITextFieldDelegate{
 
     @IBAction func calculatePressed(_ sender: UIButton) {
         //get values from the text fields and add
+        let numOne:Int? = Int(numOneTextField.text!)
+        let numTwo:Int? = Int(numTwoTextField.text!)
+        if ((numOne != nil) && (numTwo != nil)) {
+        calculated = numOne! + numTwo!
+        print(calculated!)
+        } else {
+            print("Not a valid input")
+        }
     }
     @IBAction func enterNamePressed(_ sender: UIButton) {
     }

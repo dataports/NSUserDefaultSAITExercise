@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-z7-rAH">
-                                <rect key="frame" x="0.0" y="40" width="375" height="220"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="328"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37S-MI-6II">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -32,36 +32,73 @@
                                         <rect key="frame" x="0.0" y="38" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roD-ET-0KB">
-                                        <rect key="frame" x="155.5" y="76" width="64" height="30"/>
-                                        <state key="normal" title="Calculate"/>
-                                        <connections>
-                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbd-iB-fAq"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-Jk-tDk">
+                                        <rect key="frame" x="92.5" y="76" width="190" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roD-ET-0KB">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
+                                                <state key="normal" title="Calculate">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbd-iB-fAq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ef-KD-AL5">
+                                                <rect key="frame" x="104" y="0.0" width="86" height="30"/>
+                                                <state key="normal" title="Check Value">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-wp-sKF">
                                         <rect key="frame" x="0.0" y="114" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBg-y1-h6c">
-                                        <rect key="frame" x="169" y="152" width="37" height="30"/>
-                                        <state key="normal" title="Enter"/>
-                                        <connections>
-                                            <action selector="enterNamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xY8-ot-LoQ"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1sL-Nc-Rtc">
+                                        <rect key="frame" x="104.5" y="152" width="166" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBg-y1-h6c">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Enter">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="enterNamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xY8-ot-LoQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR9-jM-iUf">
+                                                <rect key="frame" x="77" y="0.0" width="89" height="30"/>
+                                                <state key="normal" title="Check String">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-Ea-Af8">
+                                        <rect key="frame" x="0.0" y="190" width="375" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6bN-3E-QV6"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jn-zp-kK7">
-                                        <rect key="frame" x="152" y="190" width="71" height="30"/>
-                                        <state key="normal" title="Go to Grid"/>
+                                        <rect key="frame" x="152" y="298" width="71" height="30"/>
+                                        <state key="normal" title="Go to Grid">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="37S-MI-6II" secondAttribute="trailing" id="9K4-HB-6gx"/>
                                     <constraint firstItem="vjS-TH-PwN" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="ANe-vT-6kB"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kYj-Ea-Af8" secondAttribute="trailing" id="S9v-0v-5cn"/>
+                                    <constraint firstItem="kYj-Ea-Af8" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="U9T-OT-b7n"/>
                                     <constraint firstItem="pX1-wp-sKF" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="aMI-Pa-JSa"/>
                                     <constraint firstItem="37S-MI-6II" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="dkm-JX-h3p"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="pX1-wp-sKF" secondAttribute="trailing" id="rqn-53-Vac"/>
@@ -86,6 +123,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+        <!--Check Value View Controller-->
+        <scene sceneID="V1U-SI-Odv">
+            <objects>
+                <viewController id="6K8-Jk-CKU" customClass="CheckValueViewController" customModule="NSUserDefaultSAITExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umR-SO-f00">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="elb-pQ-Hka"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPh-fK-iaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="32"/>
         </scene>
     </scenes>
 </document>
