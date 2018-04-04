@@ -8,18 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate{
+    
+    //MARK: Properties
+    @IBOutlet weak var numOneTextField: UITextField!
+    
+    @IBOutlet weak var numTwoTextField: UITextField!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    var calculated:Int? = 0
+    var name:String? = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //handle the text field inputs through delegate callbacks
+        numOneTextField.delegate = self
+        numTwoTextField.delegate = self
+        nameTextField.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK: Actions
+
+    @IBAction func calculatePressed(_ sender: UIButton) {
+        //get values from the text fields and add
     }
-
-
+    @IBAction func enterNamePressed(_ sender: UIButton) {
+    }
+    
+    //MARK: UITextFieldDelegate
+    //first response removed on return key press
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
 }
 
