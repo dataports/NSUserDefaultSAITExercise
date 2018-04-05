@@ -15,24 +15,13 @@ class CheckValueViewController: UIViewController {
     
 //    var numOne:String!
 //    var numTwo:String!
-     var calculatedVC2:Int?
+   //  var calculatedVC2:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calculatedLabel.text = String(describing: calculatedVC2!)
         
-        //get values from the text fields and add
-        
-//
-        
-//        if ((numOne != nil) && (numTwo != nil)) {
-//            let numOneCalc:Int? = Int(numOne)
-//            let numTwoCalc:Int? = Int(numTwo)
-//            calculated = numOneCalc! + numTwoCalc!
-//            print(calculated!)
-//        } else {
-//            print("Not a valid input")
-//        }
+        //change text based on the Calculated key UserDefault
+        calculatedLabel.text = String(describing: UserDefaults.standard.integer(forKey: "Calculated"))
 
         // Do any additional setup after loading the view.
     }

@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         let numTwo:Int? = Int(numTwoTextField.text!)
         if ((numOne != nil) && (numTwo != nil)) {
         calculated = numOne! + numTwo!
-        //print(calculated!)
+        UserDefaults.standard.set(calculated, forKey: "Calculated")  //Integer
         } else {
             print("Not a valid input")
         }
@@ -56,12 +56,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //TODO: Add NSUserDefaults
-        //if segue.identifier == "CalculateSegue" {
-            let vc = segue.destination as! CheckValueViewController
-            vc.calculatedVC2 = calculated
-            print(vc.calculatedVC2!)
-        //}
+
     }
 
 }
