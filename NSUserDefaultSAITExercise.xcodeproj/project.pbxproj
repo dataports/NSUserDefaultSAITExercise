@@ -14,6 +14,7 @@
 		6E0E69742075599700E300A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0E69722075599700E300A2 /* LaunchScreen.storyboard */; };
 		6E0E697F2075599700E300A2 /* NSUserDefaultSAITExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E697E2075599700E300A2 /* NSUserDefaultSAITExerciseTests.swift */; };
 		6E0E698A2075808800E300A2 /* CheckValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E69892075808800E300A2 /* CheckValueViewController.swift */; };
+		6EE840882076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EE840862076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6E0E697E2075599700E300A2 /* NSUserDefaultSAITExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUserDefaultSAITExerciseTests.swift; sourceTree = "<group>"; };
 		6E0E69802075599700E300A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0E69892075808800E300A2 /* CheckValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckValueViewController.swift; sourceTree = "<group>"; };
+		6EE840872076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NSUserDefaultSAITExercise.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				6E0E69702075599700E300A2 /* Assets.xcassets */,
 				6E0E69722075599700E300A2 /* LaunchScreen.storyboard */,
 				6E0E69752075599700E300A2 /* Info.plist */,
+				6EE840862076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld */,
 			);
 			path = NSUserDefaultSAITExercise;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE840882076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld in Sources */,
 				6E0E698A2075808800E300A2 /* CheckValueViewController.swift in Sources */,
 				6E0E696C2075599700E300A2 /* ViewController.swift in Sources */,
 				6E0E696A2075599700E300A2 /* AppDelegate.swift in Sources */,
@@ -444,6 +448,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EE840862076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EE840872076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodel */,
+			);
+			currentVersion = 6EE840872076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodel */;
+			path = NSUserDefaultSAITExercise.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6E0E695E2075599700E300A2 /* Project object */;
 }
