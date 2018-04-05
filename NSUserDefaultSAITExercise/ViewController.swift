@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITextFieldDelegate{
     
@@ -28,6 +29,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         numOneTextField.delegate = self
         numTwoTextField.delegate = self
         nameTextField.delegate = self
+
+        setupCoreData()
+
     }
 
     //MARK: Actions
@@ -44,6 +48,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     @IBAction func enterNamePressed(_ sender: UIButton) {
+        if (nameTextField.text != nil) {
+            //save to core data
+        } else {
+            print("Not a valid input")
+        }
     }
     
     //MARK: UITextFieldDelegate
@@ -57,6 +66,21 @@ class ViewController: UIViewController, UITextFieldDelegate{
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+    }
+    
+    private func setupCoreData(){
+        //reference to persistent container
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "EnteredString", in: context)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        newUser.setValue("Default Name", forKey: "name")
+        do {
+            try context.save()
+            print("Save successful!")
+        } catch {
+            print("Failed saving")
+        }
     }
 
 }
