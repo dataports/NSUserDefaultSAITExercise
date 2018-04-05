@@ -93,6 +93,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="enterNamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xY8-ot-LoQ"/>
+                                                    <segue destination="Nvl-OK-ayD" kind="show" identifier="EnterSegue" id="iJo-OY-Uvf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR9-jM-iUf">
@@ -100,6 +101,9 @@
                                                 <state key="normal" title="Check String">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Nvl-OK-ayD" kind="show" identifier="CheckStringSegue" id="Ipo-zm-H52"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -194,7 +198,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPh-fK-iaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="32"/>
+            <point key="canvasLocation" x="1569" y="-213"/>
+        </scene>
+        <!--Name View Controller-->
+        <scene sceneID="xIc-3X-N2C">
+            <objects>
+                <viewController id="Nvl-OK-ayD" customClass="NameViewController" customModule="NSUserDefaultSAITExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqT-MW-984">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The name is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xg-SO-Iyn">
+                                <rect key="frame" x="138.5" y="194" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-5V-GFo">
+                                <rect key="frame" x="54.5" y="245" width="266" height="27.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="No name has been entered">
+                                        <attributes>
+                                            <font key="NSFont" size="23" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LrG-5V-GFo" firstAttribute="top" secondItem="9xg-SO-Iyn" secondAttribute="bottom" constant="30" id="AaQ-2Y-Rhu"/>
+                            <constraint firstItem="9xg-SO-Iyn" firstAttribute="top" secondItem="bRK-vc-ryB" secondAttribute="top" constant="130" id="HMV-v7-pCb"/>
+                            <constraint firstItem="LrG-5V-GFo" firstAttribute="centerX" secondItem="wqT-MW-984" secondAttribute="centerX" id="iZW-6b-JQh"/>
+                            <constraint firstItem="9xg-SO-Iyn" firstAttribute="centerX" secondItem="wqT-MW-984" secondAttribute="centerX" id="zg4-Vs-SUE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bRK-vc-ryB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbU-YQ-uVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NSI-u7-Yoy">
@@ -216,6 +260,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xml-lc-DjD"/>
+        <segue reference="Ipo-zm-H52"/>
+        <segue reference="vVz-L8-ca3"/>
     </inferredMetricsTieBreakers>
 </document>

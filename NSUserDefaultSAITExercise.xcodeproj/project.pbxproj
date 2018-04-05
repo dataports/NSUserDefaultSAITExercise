@@ -15,6 +15,7 @@
 		6E0E697F2075599700E300A2 /* NSUserDefaultSAITExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E697E2075599700E300A2 /* NSUserDefaultSAITExerciseTests.swift */; };
 		6E0E698A2075808800E300A2 /* CheckValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E69892075808800E300A2 /* CheckValueViewController.swift */; };
 		6EE840882076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EE840862076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodeld */; };
+		6EE8408A2076CD5D00487261 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE840892076CD5D00487261 /* NameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6E0E69802075599700E300A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0E69892075808800E300A2 /* CheckValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckValueViewController.swift; sourceTree = "<group>"; };
 		6EE840872076C91F00487261 /* NSUserDefaultSAITExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NSUserDefaultSAITExercise.xcdatamodel; sourceTree = "<group>"; };
+		6EE840892076CD5D00487261 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				6E0E696B2075599700E300A2 /* ViewController.swift */,
 				6E0E69892075808800E300A2 /* CheckValueViewController.swift */,
 				6E0E696D2075599700E300A2 /* Main.storyboard */,
+				6EE840892076CD5D00487261 /* NameViewController.swift */,
 				6E0E69702075599700E300A2 /* Assets.xcassets */,
 				6E0E69722075599700E300A2 /* LaunchScreen.storyboard */,
 				6E0E69752075599700E300A2 /* Info.plist */,
@@ -209,6 +212,7 @@
 				6E0E698A2075808800E300A2 /* CheckValueViewController.swift in Sources */,
 				6E0E696C2075599700E300A2 /* ViewController.swift in Sources */,
 				6E0E696A2075599700E300A2 /* AppDelegate.swift in Sources */,
+				6EE8408A2076CD5D00487261 /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
