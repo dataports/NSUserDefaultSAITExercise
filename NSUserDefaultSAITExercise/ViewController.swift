@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     //MARK: Properties
     @IBOutlet weak var numOneTextField: UITextField!
+    @IBOutlet weak var calculatorLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var numTwoTextField: UITextField!
     

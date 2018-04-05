@@ -20,22 +20,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kCu-z7-rAH">
-                                <rect key="frame" x="0.0" y="40" width="375" height="328"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="353"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter two numbers to add:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rst-mT-ciP">
+                                        <rect key="frame" x="86.5" y="0.0" width="202.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37S-MI-6II">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter second number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vjS-TH-PwN">
-                                        <rect key="frame" x="0.0" y="38" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="66.5" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-Jk-tDk">
-                                        <rect key="frame" x="92.5" y="76" width="190" height="30"/>
+                                        <rect key="frame" x="92.5" y="104.5" width="190" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roD-ET-0KB">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
@@ -54,14 +60,27 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-wp-sKF">
-                                        <rect key="frame" x="0.0" y="114" width="375" height="30"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTY-mT-GrU">
+                                        <rect key="frame" x="0.0" y="142.5" width="375" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fpZ-Gc-LvW"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZR-jx-ZtW">
+                                        <rect key="frame" x="122.5" y="180.5" width="130" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-wp-sKF">
+                                        <rect key="frame" x="0.0" y="209" width="375" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1sL-Nc-Rtc">
-                                        <rect key="frame" x="104.5" y="152" width="166" height="30"/>
+                                        <rect key="frame" x="104.5" y="247" width="166" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBg-y1-h6c">
                                                 <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
@@ -81,14 +100,14 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-Ea-Af8">
-                                        <rect key="frame" x="0.0" y="190" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="285" width="375" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="6bN-3E-QV6"/>
+                                            <constraint firstAttribute="height" constant="30" id="6bN-3E-QV6"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jn-zp-kK7">
-                                        <rect key="frame" x="152" y="298" width="71" height="30"/>
+                                        <rect key="frame" x="152" y="323" width="71" height="30"/>
                                         <state key="normal" title="Go to Grid">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
@@ -100,7 +119,9 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="kYj-Ea-Af8" secondAttribute="trailing" id="S9v-0v-5cn"/>
                                     <constraint firstItem="kYj-Ea-Af8" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="U9T-OT-b7n"/>
                                     <constraint firstItem="pX1-wp-sKF" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="aMI-Pa-JSa"/>
+                                    <constraint firstItem="nTY-mT-GrU" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="bia-bu-YJ7"/>
                                     <constraint firstItem="37S-MI-6II" firstAttribute="leading" secondItem="kCu-z7-rAH" secondAttribute="leadingMargin" id="dkm-JX-h3p"/>
+                                    <constraint firstItem="nTY-mT-GrU" firstAttribute="trailing" secondItem="kCu-z7-rAH" secondAttribute="trailingMargin" id="oiT-kv-6mD"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="pX1-wp-sKF" secondAttribute="trailing" id="rqn-53-Vac"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="vjS-TH-PwN" secondAttribute="trailing" id="wCV-6d-SF5"/>
                                 </constraints>
@@ -115,6 +136,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="calculatorLabel" destination="rst-mT-ciP" id="5J2-IX-79U"/>
+                        <outlet property="nameLabel" destination="KZR-jx-ZtW" id="pbQ-3C-pY8"/>
                         <outlet property="nameTextField" destination="pX1-wp-sKF" id="Ifo-qm-JWJ"/>
                         <outlet property="numOneTextField" destination="37S-MI-6II" id="2j4-uM-0LP"/>
                         <outlet property="numTwoTextField" destination="vjS-TH-PwN" id="LZ1-oi-WBZ"/>
@@ -137,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPh-fK-iaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="511" y="32"/>
+            <point key="canvasLocation" x="686" y="32"/>
         </scene>
     </scenes>
 </document>
