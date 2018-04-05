@@ -56,11 +56,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "CalculateSegue" {
+        //TODO: Add NSUserDefaults
+        //if segue.identifier == "CalculateSegue" {
             let vc = segue.destination as! CheckValueViewController
             vc.calculatedVC2 = calculated
             print(vc.calculatedVC2!)
-        }
+        //}
     }
 
 }
