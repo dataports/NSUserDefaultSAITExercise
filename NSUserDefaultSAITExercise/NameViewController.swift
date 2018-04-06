@@ -7,19 +7,22 @@
 //
 
 import UIKit
+import CoreData
 
 class NameViewController: UIViewController {
 
+    @IBOutlet weak var nameIntroLabel: UILabel!
+    
+    @IBOutlet weak var nameDisplayLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupCoreData()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
     /*
@@ -31,5 +34,22 @@ class NameViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
+    
+    
+    public func setupCoreData(){
+        //reference to persistent container
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "EnteredString", in: context)
+        let newUser = NSManagedObject(entity: entity!, insertInto: context)
+        newUser.setValue("Default Name", forKey: "name")
+        do {
+            try context.save()
+            print("Save successful!")
+        } catch {
+            print("Failed saving")
+        }
+    }
 }

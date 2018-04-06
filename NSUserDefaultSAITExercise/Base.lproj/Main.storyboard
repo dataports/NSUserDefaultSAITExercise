@@ -235,6 +235,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bRK-vc-ryB"/>
                     </view>
+                    <connections>
+                        <outlet property="nameDisplayLabel" destination="LrG-5V-GFo" id="i1f-8a-qgK"/>
+                        <outlet property="nameIntroLabel" destination="9xg-SO-Iyn" id="fjC-0c-n34"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbU-YQ-uVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

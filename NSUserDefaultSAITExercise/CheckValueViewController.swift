@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CheckValueViewController: UIViewController {
     //MARK: Properties
@@ -22,6 +23,7 @@ class CheckValueViewController: UIViewController {
         
         //change text based on the Calculated key UserDefault
         calculatedLabel.text = String(describing: UserDefaults.standard.integer(forKey: "Calculated"))
+
 
         // Do any additional setup after loading the view.
     }
